@@ -7,28 +7,22 @@ let h2 = document.querySelector('h2');
 suma = Number(input1.value) + Number(input2.value) + Number(input3.value);
 console.log(suma);
 
-input1.addEventListener('change', () => {
-    //checkPassword();
-});
-input2.addEventListener('change', () => {
-    //checkPassword();
-});
-input3.addEventListener('change', () => {
-    //checkPassword();
-});
 
 button.addEventListener('click',()=>{
     checkPassword();
 })
 
+
+
+
 function checkPassword() {
     console.log('Checking...');
     seleccion = input1.value + input2.value + input3.value;
     if (seleccion === '911') {
-        h2.style.color = 'green';
+        h2.style.color = 'gold';
         h2.innerHTML = "Password 1 correcto";
     } else if (seleccion === '714'){
-        h2.style.color = 'green';
+        h2.style.color = 'gold';
         h2.innerHTML = "Password 2 correcto";
     } else {
         h2.style.color = 'red';
